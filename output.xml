@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20160210 16:50:55.388" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<robot generated="20160210 17:07:45.666" generator="Robot 3.0 (Python 2.7.11 on win32)">
 <suite source="C:\Users\sanchai\Documents\ATDD\login.robot" id="s1" name="Login">
 <test id="s1-t1" name="Test Login Success">
 <kw name="Open Browser" library="Selenium2Library">
@@ -7,20 +7,77 @@
 <arguments>
 <arg>https://sprint3r2.wordpress.com/</arg>
 </arguments>
-<msg timestamp="20160210 16:50:55.594" level="INFO">Opening browser 'firefox' to base url 'https://sprint3r2.wordpress.com/'</msg>
-<status status="PASS" endtime="20160210 16:51:05.831" starttime="20160210 16:50:55.594"></status>
+<msg timestamp="20160210 17:07:45.827" level="INFO">Opening browser 'firefox' to base url 'https://sprint3r2.wordpress.com/'</msg>
+<status status="PASS" endtime="20160210 17:07:55.366" starttime="20160210 17:07:45.827"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>css=button.menu-toggle</arg>
 </arguments>
-<msg timestamp="20160210 16:51:05.836" level="INFO">Clicking element 'css=button.menu-toggle'.</msg>
-<status status="PASS" endtime="20160210 16:51:05.982" starttime="20160210 16:51:05.836"></status>
+<msg timestamp="20160210 17:07:55.368" level="INFO">Clicking element 'css=button.menu-toggle'.</msg>
+<status status="PASS" endtime="20160210 17:07:55.532" starttime="20160210 17:07:55.368"></status>
 </kw>
-<status status="PASS" endtime="20160210 16:51:05.983" critical="yes" starttime="20160210 16:50:55.593"></status>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="meta-2"]/ul/li[2]/a</arg>
+</arguments>
+<status status="PASS" endtime="20160210 17:07:55.865" starttime="20160210 17:07:55.533"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="meta-2"]/ul/li[2]/a</arg>
+</arguments>
+<msg timestamp="20160210 17:07:55.866" level="INFO">Clicking element 'xpath=//*[@id="meta-2"]/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20160210 17:07:56.664" starttime="20160210 17:07:55.865"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>user_login</arg>
+<arg>sprint3r2</arg>
+</arguments>
+<msg timestamp="20160210 17:07:56.665" level="INFO">Typing text 'sprint3r2' into text field 'user_login'</msg>
+<status status="PASS" endtime="20160210 17:07:56.740" starttime="20160210 17:07:56.665"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>user_pass</arg>
+<arg>WorkingSoftware</arg>
+</arguments>
+<msg timestamp="20160210 17:07:56.740" level="INFO">Typing text 'WorkingSoftware' into text field 'user_pass'</msg>
+<status status="PASS" endtime="20160210 17:07:56.828" starttime="20160210 17:07:56.740"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>rememberme</arg>
+</arguments>
+<msg timestamp="20160210 17:07:56.829" level="INFO">Clicking element 'rememberme'.</msg>
+<status status="PASS" endtime="20160210 17:07:56.902" starttime="20160210 17:07:56.829"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>wp-submit</arg>
+</arguments>
+<msg timestamp="20160210 17:07:56.903" level="INFO">Clicking element 'wp-submit'.</msg>
+<status status="PASS" endtime="20160210 17:08:01.688" starttime="20160210 17:07:56.903"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Welcome to WordPress.com!</arg>
+</arguments>
+<msg timestamp="20160210 17:08:01.730" level="INFO">Current page contains text 'Welcome to WordPress.com!'.</msg>
+<status status="PASS" endtime="20160210 17:08:01.731" starttime="20160210 17:08:01.688"></status>
+</kw>
+<status status="PASS" endtime="20160210 17:08:01.732" critical="yes" starttime="20160210 17:07:45.826"></status>
 </test>
-<status status="PASS" endtime="20160210 16:51:05.984" starttime="20160210 16:50:55.392"></status>
+<status status="PASS" endtime="20160210 17:08:01.734" starttime="20160210 17:07:45.671"></status>
 </suite>
 <statistics>
 <total>
