@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160210 16:50:55.388" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<suite source="C:\Users\sanchai\Documents\ATDD\login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Test Login Success">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://sprint3r2.wordpress.com/</arg>
+</arguments>
+<msg timestamp="20160210 16:50:55.594" level="INFO">Opening browser 'firefox' to base url 'https://sprint3r2.wordpress.com/'</msg>
+<status status="PASS" endtime="20160210 16:51:05.831" starttime="20160210 16:50:55.594"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=button.menu-toggle</arg>
+</arguments>
+<msg timestamp="20160210 16:51:05.836" level="INFO">Clicking element 'css=button.menu-toggle'.</msg>
+<status status="PASS" endtime="20160210 16:51:05.982" starttime="20160210 16:51:05.836"></status>
+</kw>
+<status status="PASS" endtime="20160210 16:51:05.983" critical="yes" starttime="20160210 16:50:55.593"></status>
+</test>
+<status status="PASS" endtime="20160210 16:51:05.984" starttime="20160210 16:50:55.392"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="1">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
